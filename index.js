@@ -1,17 +1,17 @@
 const express = require('express');
-const app = express();
+const index = express();
 const path = require('path');
 const dotenv = require('dotenv').config();
 
-app.use(express.static(__dirname + '/css'));
+index.use(express.static(__dirname + '/css'));
 
 
-app.get('/',(req,res)=>{
+index.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'./index.html'))
 })
 
-app.listen(process.env.PORT,()=>{
+index.listen(process.env.PORT,()=>{
     console.log("listening");
 })
 
-export default app;
+module.exports = index;
