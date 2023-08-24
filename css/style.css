@@ -214,6 +214,7 @@
 .floation-container .images{
     margin: 4rem 2rem 4rem 2rem;
     filter: opacity(0.6);
+    
     mix-blend-mode: luminosity;
     
 }
