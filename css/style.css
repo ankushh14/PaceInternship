@@ -1,7 +1,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Josefin+Sans:ital@1&family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto&display=swap');
 *{
-    font-family: 'Poppins:wght@600', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -74,7 +74,11 @@
     margin: 1rem 0rem 1rem 0rem;
 }
 .hero-block h1{
-    font-size: 4.3rem;
+    font-size: 4rem;
+    color: #FFF;
+    line-height: 1.25;
+    font-style: normal;
+    font-weight: bold;
 }
 
 .a-container{
@@ -103,7 +107,6 @@
 .container1{
     padding-top: 6rem;
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.244);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -120,26 +123,47 @@
 }
 .cont2{
     width: 40%;
-    padding: 10rem 3rem 4rem 3rem;
+    padding: 30px;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.119);
-    border-radius: 10px;
+    border-radius: 0px 0px 8px 8px;
 }
 .cont2 p{
     font-size: 1.5rem;
+    color: #4D533C;
+    line-height: 1.6;
+    font-style: italic;
+    font-weight: normal;
     margin: 0rem 0rem 1rem 0rem;
 }
 .cont1 p{
     margin: 0.5rem 0rem 0.5rem 0rem;
-    font-weight: bold;
 }
 .cont1 h1{
     margin: 0.5rem 0rem 0.5rem 0rem;
-    font-size: 2rem;
-    font-weight: 800;
+    font-size: 2.25rem;
+    color: #4D533C;
+    line-height: 1.25;
+    font-style: normal;
+    font-weight: bold;
+}
+.cont1-p{
+    font-size: 1rem;
+    color: #213842;
+    line-height: 1.6;
+    font-style: normal;
+    font-weight: normal;
+    opacity: 0.6;
 }
 .cont1 a{
     margin: 0.8rem 0rem 0.5rem 0rem;
-    color: rgba(128, 128, 128, 0.696);
+    font-size: 1rem;
+    color: #D4D6D4;
+    line-height: 1.6;
+    font-style: normal;
     font-weight: bold;
     text-decoration: none;
     transition: all;
@@ -161,11 +185,18 @@
     margin-right: 1rem;
 }
 .profile h5{
-    background-color: rgba(128, 128, 128, 0.653);
     width: fit-content;
-    font-weight: lighter;
+    font-size: 1rem;
+    color: #152934;
+    line-height: 1.6;
+    font-style: normal;
+    font-weight: normal;
 }
 .profile h4{
+    font-size: 1.4rem;
+    color: #4D533C;
+    line-height: 1.6;
+    font-style: normal;
     font-weight: bold;
     margin-bottom: 0.4rem;
 }
@@ -174,7 +205,7 @@
     display: flex;
     position: absolute;
     right: 0%;
-    top: 90%;
+    top: 93%;
     width: 90%;
     background-color: white;
     box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.119);
@@ -182,12 +213,16 @@
 }
 .floation-container .images{
     margin: 4rem 2rem 4rem 2rem;
-    filter: grayscale(100%);
-    mix-blend-mode: normal;
+    filter: opacity(0.6);
+    mix-blend-mode: luminosity;
     
 }
 .cont3{
-    font-size: 2rem;
+    font-size: 2.25rem;
+    color: #4D533C;
+    line-height: 1.25;
+    font-style: normal;
+    font-weight: bold;
     margin: 2rem;
     width: 28%;
     margin-right: 0rem;
@@ -196,15 +231,21 @@
 }
 .cont4{
     width: 50%;
-    font-weight: bold;
-    font-size: 18px;
-    color: gray;
+    font-size: 1rem;
+    color: #213842;
+    line-height: 1.6;
+    font-style: normal;
+    font-weight: normal;
+    opacity: 0.6;
 }
 
 .footer{
     width: 100%;
-    /* background-image: url("./imgs/images/footer-bg.png"); */
-    background-color: #4c5838;
+    background-image: url("./imgs/images/footer-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-color: #4D533C;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -258,7 +299,7 @@
     transition-duration: 500ms;
 }
 .footer-cont-cont ul li:hover{
-    color: white;
+    color: rgb(253, 183, 52);
 }
 .footer-cont-cont p{
     color: white;
@@ -268,6 +309,12 @@
     color: white;
     font-size: 1.5rem;
     font-weight: bolder;
+    transition: all ease-in-out;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+#gmail-link:hover{
+    color: rgb(250, 175, 35);
 }
 .footer3-cont{
     display: flex;
@@ -330,9 +377,14 @@
     }
     .cont2{
         width: 90%;
+        height: auto;
         padding: 2rem;
-        box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.119);
+        box-shadow: 50px 50px 100px 0 rgba(0, 0, 0, 0.15);
         border-radius: 10px;
+    }
+    .cont2 p{
+        padding-top: 0%;
+        font-size: 1rem;
     }
     .cont3{
         font-size: 2rem;
@@ -343,12 +395,12 @@
         text-align: center;
     }
     .cont4{
-        width: 100%;
-        font-weight: bold;
-        font-size: 18px;
-        color: gray;
-        text-align: center;
-        padding: 2rem;
+        width: 90%;
+        font-size: 1rem;
+        color: #213842;
+        font-style: normal;
+        font-weight: normal;
+        opacity: 0.6;
     }
     .cont1{
         width: 100%;
