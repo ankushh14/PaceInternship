@@ -10,6 +10,10 @@ index.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'./index.html'))
 })
 
+index.get('/hello',(req,res)=>{
+    res.send("Hello")
+})
+
 index.listen(process.env.PORT,()=>{
     console.log("listening");
 })
